@@ -7,3 +7,24 @@
   text-transform: uppercase;
   color: var(--dark);
 }
+
+.font-title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.font-second-family {
+  font-family: Allura;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: white;
+}

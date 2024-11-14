@@ -7,7 +7,7 @@ body {
 .main-wrapper {
   width: 1440px;
   margin: 0 auto !important;
-  padding: 12px 82px 40px;
+  padding: 12px 0 40px;
   box-sizing: border-box;
 }
 
@@ -17,6 +17,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 12px;
+  margin: 0 82px;
 }
 
 .logo {
@@ -46,5 +47,36 @@ body {
   position: relative;
   text-decoration: none;
   padding: 12px 20px;
-  color: var(--dark);
+  color: #181c29;
+}
+
+.hero-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 120px 0;
+  border-radius: 20px 20px 0 0;
+  background: url(../assets/images/bg-snow.png), url(../assets/images/bg-ball.png) #ff4646 100% / cover;
+  background-size: 100% 115%;
+}
+
+.hero-title {
+  margin: 0;
+}
+
+.hero-link-gifts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 235px;
+  height: 56px;
+  background: #181c29;
+  text-decoration: none;
+}
+
+.hero-link-text {
+  color: #ffffff;
 }
