@@ -50,6 +50,13 @@ body {
   color: #181c29;
 }
 
+.background-wrapper {
+  background: url(../assets/images/bg-snow.png), #ff4646 100% / cover repeat;
+  background-size: 100% auto;
+  border-radius: 20px 20px 0 0;
+  padding-bottom: 60px;
+}
+
 .hero-wrapper {
   width: 100%;
   display: flex;
@@ -58,7 +65,7 @@ body {
   gap: 12px;
   padding: 120px 0;
   border-radius: 20px 20px 0 0;
-  background: url(../assets/images/bg-snow.png), url(../assets/images/bg-ball.png) #ff4646 100% / cover;
+  background: url(../assets/images/bg-ball.png) 100% / cover;
   background-size: 100% 115%;
 }
 
@@ -79,4 +86,19 @@ body {
 
 .hero-link-text {
   color: #ffffff;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-direction: row;
+  background: #ffffff;
+  border-radius: 20px;
+  margin: 60px 82px 0;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 160px 152px 160px 60px;
 }
