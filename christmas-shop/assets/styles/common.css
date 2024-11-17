@@ -37,6 +37,15 @@
   color: white;
 }
 
+.font-header-4 {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
 .font-second-family {
   font-family: Allura;
   font-weight: 400;

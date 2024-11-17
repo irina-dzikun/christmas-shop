@@ -51,10 +51,12 @@ body {
 }
 
 .background-wrapper {
+  width: 100%;
   background: url(../assets/images/bg-snow.png), #ff4646 100% / cover repeat;
   background-size: 100% auto;
   border-radius: 20px 20px 0 0;
   padding-bottom: 60px;
+  box-sizing: border-box;
 }
 
 .hero-wrapper {
@@ -101,4 +103,68 @@ body {
   flex-direction: column;
   gap: 20px;
   padding: 160px 152px 160px 60px;
+}
+
+.slider-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 82px 0;
+  gap: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.slider-text {
+  color: #ffffff !important;
+  margin-top: -8px;
+}
+
+.slider-images {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.slider-image {
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.slider-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  gap: 20px;
+}
+
+.slider-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  cursor: pointer;
+  background: 0;
+}
+
+.slider-arrow-active {
+  border: 1px solid #ffffff;
+}
+
+.slider-arrow-left {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/icons/arrow-left.svg) center center no-repeat;
+}
+
+.slider-arrow-right {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/icons/arrow-right.svg) center center no-repeat;
 }
