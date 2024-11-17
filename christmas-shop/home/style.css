@@ -168,3 +168,59 @@ body {
   height: 24px;
   background: url(../assets/icons/arrow-right.svg) center center no-repeat;
 }
+
+.best-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 120px;
+}
+
+.best-text {
+  color: #ffffff !important;
+  margin-top: -8px;
+}
+
+.best-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.best-block {
+  width: 310px;
+  height: 342px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.best-image {
+  width: 310px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.best-block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+}
+
+.best-blue {
+  color: #4361ff !important;
+}
+
+.best-green {
+  color: #06a44f !important;
+}
+
+.best-pink {
+  color: #ff43f7 !important;
+}

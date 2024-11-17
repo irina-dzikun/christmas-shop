@@ -46,6 +46,16 @@
   color: #ffffff;
 }
 
+.font-five {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 152%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #181c29;
+}
+
 .font-second-family {
   font-family: Allura;
   font-weight: 400;
