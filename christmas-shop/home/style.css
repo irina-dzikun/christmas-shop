@@ -3,11 +3,14 @@ body {
   background: #ffffff;
   overflow-x: hidden;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 .main-wrapper {
   width: 1440px;
   margin: 0 auto !important;
-  padding: 12px 0 40px;
+  padding-top: 12px;
   box-sizing: border-box;
 }
 
@@ -48,6 +51,14 @@ body {
   text-decoration: none;
   padding: 12px 20px;
   color: #181c29;
+  border-radius: 12px;
+  transition: all ease 0.7s;
+}
+
+.nav-link:hover {
+  color: #ff4646;
+  background: rgba(255, 96, 96, 0.1);
+  transition: all ease 0.5s;
 }
 
 .background-wrapper {
@@ -83,10 +94,22 @@ body {
   height: 56px;
   background: #181c29;
   text-decoration: none;
+  transition: all ease 0.7s;
+}
+
+.hero-link-gifts:hover {
+  background: #ffffff;
+  transition: all ease 0.5s;
 }
 
 .hero-link-text {
   color: #ffffff;
+  transition: all ease 0.7s;
+}
+
+.hero-link-gifts:hover .hero-link-text {
+  color: #181c29 !important;
+  transition: all ease 0.5s;
 }
 
 .about-wrapper {
@@ -154,6 +177,12 @@ body {
 
 .slider-arrow-active {
   border: 1px solid #ffffff;
+  transition: all ease 0.7s;
+}
+
+.slider-arrow-active:hover {
+  background: #ffffff;
+  transition: all ease 0.5s;
 }
 
 .slider-arrow-left {
@@ -166,6 +195,12 @@ body {
   width: 24px;
   height: 24px;
   background: url(../assets/icons/arrow-right.svg) center center no-repeat;
+  transition: all ease 0.7s;
+}
+
+.slider-arrow-active:hover .slider-arrow-right {
+  background: url(../assets/icons/arrow-right-red.svg) center center no-repeat;
+  transition: all ease 0.5s;
 }
 
 .best-wrapper {
@@ -194,22 +229,37 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  background: #ffffff;
   border-radius: 20px;
   overflow: hidden;
+  background: #ecf3f8;
+  cursor: pointer;
 }
 
 .best-image {
   width: 310px;
   height: 230px;
-  border-radius: 20px;
+  background: #ecf3f8;
 }
 
 .best-block-text {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 8px;
   padding: 20px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.best-block .font-five {
+  transition: all ease 0.7s;
+}
+
+.best-block:hover .font-five {
+  color: #ff4646;
+  transition: all ease 0.5s;
 }
 
 .best-blue {
@@ -250,7 +300,7 @@ body {
   align-items: center;
   padding: 8px 12px 12px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
   margin-top: -12px;
 }
 
@@ -259,6 +309,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.start-block-line {
+  height: 20px;
+  border-left: 1px solid #ffffff;
 }
 
 .start-white {
