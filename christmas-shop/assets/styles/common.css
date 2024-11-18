@@ -8,7 +8,7 @@
   color: var(--dark);
 }
 
-.font-header-2 {
+.font-header-two {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 24px;
@@ -18,7 +18,7 @@
   color: #181c29;
 }
 
-.font-header-3 {
+.font-header-three {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 16px;
@@ -37,7 +37,7 @@
   color: white;
 }
 
-.font-header-4 {
+.font-header-four {
   font-family: Montserrat;
   font-weight: 600;
   font-size: 80px;

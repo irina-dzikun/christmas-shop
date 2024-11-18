@@ -295,11 +295,11 @@ body {
   transition: all ease 0.5s;
 }
 
-.footer-contact .font-header-2 {
+.footer-contact .font-header-two {
   transition: all ease 0.7s;
 }
 
-.footer-contact:hover .font-header-2 {
+.footer-contact:hover .font-header-two {
   color: #ff4646;
   transition: all ease 0.5s;
 }
