@@ -12,6 +12,7 @@ html {
   margin: 0 auto !important;
   padding-top: 12px;
   box-sizing: border-box;
+  background: url(../assets/images/bg-garland.png) / cover no-repeat;
 }
 
 .header-wrapper {
@@ -64,4 +65,123 @@ html {
   color: #ff4646;
   background: rgba(255, 96, 96, 0.1);
   transition: all ease 0.5s;
+}
+
+.all-gifts-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 82px;
+  border-radius: 20px;
+  background: url(../assets/images/bg-garland.png) #ff4646 100% / cover no-repeat;
+  background-size: 100% auto;
+  background-position: top;
+}
+
+.all-gifts-title {
+  margin: 0 0 20px;
+}
+
+.button-tab-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.button-tab {
+  border-radius: 12px;
+  padding: 12px 20px;
+  border: 0;
+  background: 0;
+  box-sizing: border-box;
+  color: #ffffff !important;
+  cursor: pointer;
+  transition: all ease 0.7s;
+}
+
+.button-tab-activ {
+  border-radius: 12px;
+  padding: 12px 20px;
+  border: 0;
+  background: rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  color: #ffffff !important;
+  cursor: pointer;
+}
+
+.button-tab:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: all ease 0.7s;
+}
+
+.best-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
+.best-text {
+  color: #ffffff !important;
+  margin-top: -8px;
+}
+
+.best-container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.best-block {
+  width: 310px;
+  height: 342px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ecf3f8;
+  cursor: pointer;
+}
+
+.best-image {
+  width: 310px;
+  height: 230px;
+  background: #ecf3f8;
+}
+
+.best-block-text {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #ffffff;
+}
+
+.best-block .font-five {
+  transition: all ease 0.7s;
+}
+
+.best-block:hover .font-five {
+  color: #ff4646;
+  transition: all ease 0.5s;
+}
+
+.best-blue {
+  color: #4361ff !important;
+}
+
+.best-green {
+  color: #06a44f !important;
+}
+
+.best-pink {
+  color: #ff43f7 !important;
 }
