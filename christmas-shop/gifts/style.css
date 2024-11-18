@@ -43,10 +43,6 @@ html {
   padding: 0;
 }
 
-.nav-li {
-  cursor: pointer;
-}
-
 .nav-link {
   position: relative;
   text-decoration: none;
@@ -54,9 +50,14 @@ html {
   color: #181c29;
   border-radius: 12px;
   transition: all ease 0.7s;
+  cursor: pointer;
 }
 
 .nav-link-activ {
+  position: relative;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 12px;
   color: #ff4646;
   background: rgba(255, 96, 96, 0.1);
 }
@@ -106,7 +107,6 @@ html {
   background: rgba(255, 255, 255, 0.2);
   box-sizing: border-box;
   color: #ffffff !important;
-  cursor: pointer;
 }
 
 .button-tab:hover {
