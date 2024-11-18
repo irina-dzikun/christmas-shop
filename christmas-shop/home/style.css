@@ -171,11 +171,11 @@ html {
   height: 56px;
   border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 20px;
-  cursor: pointer;
   background: 0;
 }
 
 .slider-arrow-active {
+  cursor: pointer;
   border: 1px solid #ffffff;
   transition: all ease 0.7s;
 }
