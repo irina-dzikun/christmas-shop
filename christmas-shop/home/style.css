@@ -78,7 +78,7 @@ html {
   padding: 120px 0;
   border-radius: 20px 20px 0 0;
   background: url(../assets/images/bg-ball.png) 100% / cover;
-  background-size: 100% 115%;
+  background-position: center;
 }
 
 .hero-title {
@@ -113,6 +113,7 @@ html {
 }
 
 .about-wrapper {
+  height: 528px;
   display: flex;
   flex-direction: row;
   background: #ffffff;
@@ -218,8 +219,11 @@ html {
 
 .best-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
+  justify-content: center;
   gap: 12px;
+  padding: 0 68px 0;
 }
 
 .best-block {
@@ -280,8 +284,8 @@ html {
   align-items: center;
   gap: 20px;
   background: url(../assets/images/bg-forest.png) 100% / cover;
-  background-size: 100% 100%;
   padding-bottom: 180px;
+  background-position: center;
 }
 
 .start-text {
@@ -321,6 +325,8 @@ html {
 }
 
 .footer-wrapper {
+  width: 100%;
+  box-sizing: border-box !important;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,8 +335,10 @@ html {
 
 .footer-contacts {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   padding-bottom: 57px;
 }
@@ -451,4 +459,119 @@ html {
 .footer-school:hover {
   color: #ff4646 !important;
   transition: all ease 0.5s;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1439px) {
+  .main-wrapper {
+    width: 100vw;
+  }
+
+  .header-wrapper {
+    margin: 0 5%;
+  }
+
+  .about-wrapper {
+    margin: 60px 5% 0;
+  }
+
+  .about-image {
+    min-width: 44.3vw;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .about-text {
+    padding: 11.1% 10.5% 11.1% 60px;
+  }
+
+  .slider-wrapper {
+    padding: 120px 5% 0;
+  }
+
+  .footer-contact {
+    width: 100%;
+    height: 204px;
+  }
+
+  .footer-wrapper {
+    padding: 60px 5%;
+  }
+
+  .footer-contact {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .main-wrapper {
+    width: 100vw;
+  }
+  .header-wrapper {
+    margin: 0 3%;
+  }
+
+  .about-wrapper {
+    margin: 60px 3% 0;
+  }
+
+  .slider-wrapper {
+    padding: 120px 3% 0;
+  }
+
+  .footer-wrapper {
+    padding: 60px 3%;
+  }
+}
+
+@media screen and (min-width: 381px) and (max-width: 768px) {
+  .main-wrapper {
+    width: 100vw;
+  }
+
+  .header-wrapper {
+    margin: 0 8px;
+    padding-bottom: 11px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+    background: #ffffff;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .about-wrapper {
+    margin: 60px 8px 0;
+  }
+
+  .about-image {
+    min-width: 49vw;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .about-text {
+    padding: 106px 60px;
+  }
+
+  .slider-wrapper {
+    padding: 120px 8px 0;
+  }
+
+  .footer-wrapper {
+    padding: 60px 8px;
+  }
+
+  .footer-contact {
+    width: 100%;
+  }
 }
