@@ -62,10 +62,13 @@ html {
   background: rgba(255, 96, 96, 0.1);
 }
 
-.nav-link:hover {
+
+@media (hover: hover) {
+ .nav-link:hover {
   color: #ff4646;
   background: rgba(255, 96, 96, 0.1);
   transition: all ease 0.5s;
+ }
 }
 
 .all-gifts-wrapper {
@@ -109,9 +112,11 @@ html {
   color: #ffffff !important;
 }
 
-.button-tab:hover {
+@media (hover: hover) {
+ .button-tab:hover {
   background: rgba(255, 255, 255, 0.2);
   transition: all ease 0.7s;
+ }
 }
 
 .best-wrapper {
@@ -169,9 +174,11 @@ html {
   transition: all ease 0.7s;
 }
 
-.best-block:hover .font-five {
+@media (hover: hover) {
+ .best-block:hover .font-five {
   color: #ff4646;
   transition: all ease 0.5s;
+ }
 }
 
 .best-blue {
@@ -221,19 +228,21 @@ html {
   transition: all ease 0.7s;
 }
 
-.footer-contact:hover .font-header-two {
-  color: #ff4646;
-  transition: all ease 0.5s;
-}
-
 .footer-contact .font-five {
   transition: all ease 0.7s;
 }
 
-.footer-contact:hover .font-five {
-  color: #ff4646;
-  transition: all ease 0.5s;
-}
+@media (hover: hover) {
+  .footer-contact:hover .font-header-two {
+    color: #ff4646;
+    transition: all ease 0.5s;
+  }
+
+  .footer-contact:hover .font-five {
+    color: #ff4646;
+    transition: all ease 0.5s;
+  }
+ }
 
 .footer-icon-call-us {
   width: 80px;
@@ -267,21 +276,11 @@ html {
   transition: all ease 0.7s;
 }
 
-.footer-icon-telegram:hover {
-  background: url(../assets/icons/telegram-red.svg) center center no-repeat;
-  transition: all ease 0.5s;
-}
-
 .footer-icon-facebook {
   width: 40px;
   height: 40px;
   background: url(../assets/icons/facebook.svg) center center no-repeat;
   transition: all ease 0.7s;
-}
-
-.footer-icon-facebook:hover {
-  background: url(../assets/icons/facebook-red.svg) center center no-repeat;
-  transition: all ease 0.5s;
 }
 
 .footer-icon-instagram {
@@ -291,21 +290,11 @@ html {
   transition: all ease 0.7s;
 }
 
-.footer-icon-instagram:hover {
-  background: url(../assets/icons/instagram-red.svg) center center no-repeat;
-  transition: all ease 0.5s;
-}
-
 .footer-icon-x {
   width: 40px;
   height: 40px;
   background: url(../assets/icons/x.svg) center center no-repeat;
   transition: all ease 0.7s;
-}
-
-.footer-icon-x:hover {
-  background: url(../assets/icons/x-red.svg) center center no-repeat;
-  transition: all ease 0.5s;
 }
 
 .footer-school {
@@ -315,10 +304,32 @@ html {
   transition: all ease 0.7s;
 }
 
-.footer-school:hover {
-  color: #ff4646 !important;
-  transition: all ease 0.5s;
-}
+@media (hover: hover) {
+  .footer-icon-telegram:hover {
+   background: url(../assets/icons/telegram-red.svg) center center no-repeat;
+   transition: all ease 0.5s;
+  }
+
+  .footer-icon-facebook:hover {
+    background: url(../assets/icons/facebook-red.svg) center center no-repeat;
+    transition: all ease 0.5s;
+  }
+
+  .footer-icon-instagram:hover {
+    background: url(../assets/icons/instagram-red.svg) center center no-repeat;
+    transition: all ease 0.5s;
+  }
+
+  .footer-icon-x:hover {
+    background: url(../assets/icons/x-red.svg) center center no-repeat;
+    transition: all ease 0.5s;
+  }
+
+  .footer-school:hover {
+    color: #ff4646 !important;
+    transition: all ease 0.5s;
+  }
+ }
 
 .burger {
   display: none;
@@ -460,4 +471,7 @@ html {
   .footer-contact {
     width: 100%;
   }
+}
+
+@media (hover: none) {
 }
