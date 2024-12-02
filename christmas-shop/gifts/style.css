@@ -98,6 +98,7 @@ html {
 }
 
 .button-tab {
+  display: flex;
   border-radius: 12px;
   padding: 12px 20px;
   border: 0;
@@ -108,7 +109,8 @@ html {
   transition: all ease 0.7s;
 }
 
-.button-tab-activ {
+.button-tab-active {
+  display: flex;
   border-radius: 12px;
   padding: 12px 20px;
   border: 0;
@@ -549,7 +551,7 @@ html {
     padding: 12px 8px;
   }
 
-  .button-tab-activ {
+  .button-tab-active {
     padding: 12px 8px;
   }
 }
@@ -710,7 +712,7 @@ html {
     padding: 12px 8px;
   }
 
-  .button-tab-activ {
+  .button-tab-active {
     padding: 12px 8px;
   }
 

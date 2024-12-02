@@ -508,6 +508,42 @@ const HARMONY = [
   }
 ]
 
+window.addEventListener("load", () => {
+  const workClick = document.querySelector(".btn-work");
+  const healthClick = document.querySelector(".btn-health");
+  const harmonyClick = document.querySelector(".btn-harmony");
+  const allClick = document.querySelector(".btn-all");
+
+  allClick.addEventListener("click", () => {
+    workClick.classList.remove("button-tab-active");
+    healthClick.classList.remove("button-tab-active");
+    harmonyClick.classList.remove("button-tab-active");
+    allClick.classList.add("button-tab-active");
+  });
+
+  workClick.addEventListener("click", () => {
+    allClick.classList.remove("button-tab-active");
+    healthClick.classList.remove("button-tab-active");
+    harmonyClick.classList.remove("button-tab-active");
+    workClick.classList.add("button-tab-active");
+  });
+
+  healthClick.addEventListener("click", () => {
+    allClick.classList.remove("button-tab-active");
+    workClick.classList.remove("button-tab-active");
+    harmonyClick.classList.remove("button-tab-active");
+    healthClick.classList.add("button-tab-active");
+  });
+
+  harmonyClick.addEventListener("click", () => {
+    allClick.classList.remove("button-tab-active");
+    workClick.classList.remove("button-tab-active");
+    healthClick.classList.remove("button-tab-active");
+    harmonyClick.classList.add("button-tab-active");
+  });
+
+});
+
 function toggleNav() {
   const navMob = document.querySelector(".nav-wrapper-mob");
   const burger = document.querySelector(".burger");
