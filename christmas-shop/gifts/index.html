@@ -17,8 +17,21 @@
       href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     >
+    <script src="./script.js"></script>
   </head>
   <body>
+    <div class="nav-wrapper-mob">
+      <div class="nav-wrapper-menu-mob">
+        <nav>
+          <ul class="nav-mob font-link-button">
+            <li class="nav-li"><a class="font-header-two-activ" onclick="toggleNav()">Gifts</a></li>
+            <li class="nav-li"><a class="font-header-two" href="../home/index.html#about" onclick="toggleNav()">About</a></li>
+            <li class="nav-li"><a class="font-header-two" href="../home/index.html#best" onclick="toggleNav()">Best</a></li>
+            <li class="nav-li"><a class="font-header-two" href="#contacts" onclick="toggleNav()">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
     <div class="main-wrapper">
       <header class="header-wrapper">
         <a class="logo font-link-button" href="../home/index.html">
@@ -33,9 +46,12 @@
             <li class="nav-li"><a class="nav-link" href="#contacts">Contacts</a></li>
           </ul>
         </nav>
-        <button class="burger">
-          <img src="../assets/icons/burger.svg" alt="menu">
-        </button>
+        <div class="burger" onclick="toggleNav()">
+          <span class="burger-line-open burger-line-first"></span>
+          <span class="burger-line-close burger-line-second"></span>
+          <span class="burger-line-close burger-line-third"></span>
+          <span class="burger-line-open burger-line-fourth"></span>
+        </div>
       </header>
       <div class="all-gifts-wrapper">
         <h1 class="all-gifts-title font-title">
