@@ -508,7 +508,12 @@ const HARMONY = [
   }
 ]
 
+const ALL = [...WORK,...HEALTH,...HARMONY];
+
 window.addEventListener("load", () => {
+
+  const menuWrapper = document.querySelector(".menu-wrapper");
+  menuWrapper.innerHTML = allWork;
   const workClick = document.querySelector(".btn-work");
   const healthClick = document.querySelector(".btn-health");
   const harmonyClick = document.querySelector(".btn-harmony");
@@ -519,6 +524,7 @@ window.addEventListener("load", () => {
     healthClick.classList.remove("button-tab-active");
     harmonyClick.classList.remove("button-tab-active");
     allClick.classList.add("button-tab-active");
+    menuWrapper.innerHTML = allWork;
   });
 
   workClick.addEventListener("click", () => {
@@ -526,6 +532,7 @@ window.addEventListener("load", () => {
     healthClick.classList.remove("button-tab-active");
     harmonyClick.classList.remove("button-tab-active");
     workClick.classList.add("button-tab-active");
+    menuWrapper.innerHTML = menuWork;
   });
 
   healthClick.addEventListener("click", () => {
@@ -533,6 +540,7 @@ window.addEventListener("load", () => {
     workClick.classList.remove("button-tab-active");
     harmonyClick.classList.remove("button-tab-active");
     healthClick.classList.add("button-tab-active");
+    menuWrapper.innerHTML = menuHealth;
   });
 
   harmonyClick.addEventListener("click", () => {
@@ -540,7 +548,9 @@ window.addEventListener("load", () => {
     workClick.classList.remove("button-tab-active");
     healthClick.classList.remove("button-tab-active");
     harmonyClick.classList.add("button-tab-active");
+    menuWrapper.innerHTML = menuHarmony;
   });
+
 
 });
 
@@ -552,3 +562,45 @@ function toggleNav() {
   navMob.classList.toggle("nav-wrapper-mob-active");
   body.classList.toggle("noscroll");
 }
+
+const allWork = ALL.map((i) => {
+  return `<div class="best-block" id=${i.id}>
+  <img class="best-image" src=${i.img} alt="gift-for-work">
+  <div class="best-block-text">
+    <div class="best-blue font-link-button">${i.category}</div>
+    <div class="font-five">${i.name}</div>
+  </div>
+</div>`;
+}).join("");
+
+const menuWork = WORK.map((i) => {
+  return `<div class="best-block" id=${i.id}>
+  <img class="best-image" src=${i.img} alt="gift-for-work">
+  <div class="best-block-text">
+    <div class="best-blue font-link-button">${i.category}</div>
+    <div class="font-five">${i.name}</div>
+  </div>
+</div>`;
+}).join("");
+
+const menuHealth = HEALTH.map((i) => {
+  return `<div class="best-block" id=${i.id}>
+  <img class="best-image" src=${i.img} alt="gift-for-work">
+  <div class="best-block-text">
+    <div class="best-blue font-link-button">${i.category}</div>
+    <div class="font-five">${i.name}</div>
+  </div>
+</div>`;
+}).join("");
+
+const menuHarmony = HARMONY.map((i) => {
+  return `<div class="best-block" id=${i.id}>
+  <img class="best-image" src=${i.img} alt="gift-for-work">
+  <div class="best-block-text">
+    <div class="best-blue font-link-button">${i.category}</div>
+    <div class="font-five">${i.name}</div>
+  </div>
+</div>`;
+}).join("");
+
+

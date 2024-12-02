@@ -135,6 +135,15 @@ html {
   padding-top: 20px;
 }
 
+.menu-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  box-sizing: border-box;
+  padding-top: 20px;
+}
+
 .best-text {
   color: #ffffff !important;
   margin-top: -8px;
