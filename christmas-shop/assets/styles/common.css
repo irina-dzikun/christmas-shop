@@ -1,0 +1,75 @@
+.font-link-button {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dark);
+}
+
+.font-header-two {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 152%;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #181c29;
+}
+
+.font-header-three {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 148%;
+  color: #181c29;
+}
+
+.font-title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.font-header-four {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+.font-five {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 152%;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #181c29;
+}
+
+.font-second-family {
+  font-family: Allura;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: white;
+}
+
+.font-second-family-col {
+  font-family: Allura;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  color: #ff4646;
+}

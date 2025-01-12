@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts</title>
+    <link rel="shortcut icon" type="image/svg" href="../assets/icons/snowflake.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../assets/styles/common.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    >
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="nav-wrapper-mob">
+      <div class="nav-wrapper-menu-mob">
+        <nav>
+          <ul class="nav-mob font-link-button">
+            <li class="nav-li"><a class="font-header-two-activ" onclick="toggleNav()">Gifts</a></li>
+            <li class="nav-li"><a class="font-header-two" href="../home/index.html#about" onclick="toggleNav()">About</a></li>
+            <li class="nav-li"><a class="font-header-two" href="../home/index.html#best" onclick="toggleNav()">Best</a></li>
+            <li class="nav-li"><a class="font-header-two" href="#contacts" onclick="toggleNav()">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main-wrapper">
+      <header class="header-wrapper">
+        <a class="logo font-link-button" href="../home/index.html">
+          <img src="../assets/icons/snowflake.svg" alt="snowflake">
+          <span>The gifts</span>
+        </a>
+        <nav>
+          <ul class="nav font-link-button">
+            <li class="nav-li"><a class="nav-link-activ">Gifts</a></li>
+            <li class="nav-li"><a class="nav-link" href="../home/index.html#about">About</a></li>
+            <li class="nav-li"><a class="nav-link" href="../home/index.html#best">Best</a></li>
+            <li class="nav-li"><a class="nav-link" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+        <div class="burger" onclick="toggleNav()">
+          <span class="burger-line-open burger-line-first"></span>
+          <span class="burger-line-close burger-line-second"></span>
+          <span class="burger-line-close burger-line-third"></span>
+          <span class="burger-line-open burger-line-fourth"></span>
+        </div>
+      </header>
+      <div class="all-gifts-wrapper">
+        <h1 class="all-gifts-title font-title">
+          Achieve health,<br>
+          harmony, and<br>
+          inner strength
+        </h1>
+        <div class="button-tab-wrapper">
+          <button class="button-tab button-tab-active font-link-button btn-all">All</button>
+          <button class="button-tab font-link-button btn-work">For work</button>
+          <button class="button-tab font-link-button btn-health">For health</button>
+          <button class="button-tab font-link-button btn-harmony">For harmony</button>
+        </div>
+        <div class="menu-wrapper"></div>
+      </div>
+      <footer>
+        <div class="footer-wrapper" id="contacts">
+          <div class="footer-contacts">
+            <a class="footer-contact" href="tel:+375291112233">
+              <span class="footer-icon-call-us"></span>
+              <span class="font-header-two">+375 (29) 111-22-33</span>
+              <span class="font-five">Call us</span>
+            </a>
+            <a class="footer-contact" href="https://maps.app.goo.gl/VonHvREUf6rhyZPi9" rel="noreferrer" target="_blank">
+              <span class="footer-icon-meet-us"></span>
+              <span class="font-header-two">Magic forest</span>
+              <span class="font-five">Meet us</span>
+            </a>
+            <a class="footer-contact" href="mailto:someone@example.com">
+              <span class="footer-icon-write-us"></span>
+              <span class="font-header-two">gifts@magic.com</span>
+              <span class="font-five">Write us</span>
+            </a>
+          </div>
+          <div class="footer-links">
+            <a href="https://www.telegram.com/" target="_blank" rel="noreferrer" class="footer-link">
+              <div class="footer-icon-telegram"></div>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">
+              <div class="footer-icon-facebook"></div>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+              <div class="footer-icon-instagram"></div>
+            </a>
+            <a href="https://www.x.com/" target="_blank" rel="noreferrer">
+              <div class="footer-icon-x"></div>
+            </a>
+          </div>
+          <div class="font-header-three">© Copyright 2025, All Rights Reserved</div>
+          <a href="https://rs.school/" target="_blank" rel="noreferrer" class="footer-school font-second-family">
+            <span>Made in Rolling Scopes School</span></a
+          >
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
